@@ -1,0 +1,12 @@
+language: python
+python:
+  - "3.6"
+
+script:
+  - sonar-scanner
+
+addons:
+ sonarcloud:
+   organization: zkhalido-github # the key of the org you chose at step #3
+   token:
+     secure: ${newToken}
