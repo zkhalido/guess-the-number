@@ -32,7 +32,7 @@ class UserInterface:
         try:
             self.guess = int(input("Guess a number:"))
         except:
-            print("Incorrect range Error")
+            print("Incorrect input Error")
             self.guess()
 
         while True:
